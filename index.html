@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chess Arena</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="lib/chessboard.css" />
+</head>
+<body>
+  <header>
+    <h1>♟️ Chess Arena</h1>
+  </header>
+
+  <main>
+    <!-- Game Mode Selection -->
+    <section id="mode-selection">
+      <h2>Select Game Mode</h2>
+      <button id="ai-mode-btn">Play vs AI</button>
+      <button id="pvp-mode-btn">Player vs Player</button>
+    </section>
+
+    <!-- AI Difficulty Selection (shown after AI selected) -->
+    <section id="ai-difficulty" class="hidden">
+      <h2>Choose AI Difficulty</h2>
+      <button data-level="beginner">Beginner</button>
+      <button data-level="advanced">Advanced</button>
+      <button data-level="expert">Expert</button>
+      <button id="back-to-modes">Back</button>
+    </section>
+
+    <!-- Chess Board Game Area -->
+    <section id="game-board-container" class="hidden">
+      <div id="chessboard"></div>
+      <div id="game-status">Make your move!</div>
+      <button id="reset-game">New Game</button>
+      <button id="quit-game">Quit</button>
+    </section>
+  </main>
+
+  <script src="lib/chess.js"></script>
+  <script src="lib/chessboard.js"></script>
+  <script src="lib/stockfish.wasm.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/ai-player.js"></script>
+  <script src="js/pvp-mode.js"></script>
+</body>
+</html>
