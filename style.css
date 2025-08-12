@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+button {
+  padding: 12px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #4a6ea9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #3a5a8f;
+}
+
+#chessboard {
+  width: 400px;
+  margin: 20px auto;
+}
+
+.hidden {
+  display: none;
+}
+
+#game-status {
+  margin: 15px 0;
+  font-weight: bold;
+  color: #333;
+}
